@@ -43,7 +43,7 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
     throw error;
   }
 }
-//creer la commande 'payement et tt ca '
+
 export const createOrder = async (order: CreateOrderParams) => {
   try {
     await connectToDatabase();
@@ -55,7 +55,6 @@ export const createOrder = async (order: CreateOrderParams) => {
     });
 
     return JSON.parse(JSON.stringify(newOrder));
-
   } catch (error) {
     handleError(error);
   }
@@ -66,7 +65,7 @@ export async function getOrdersByEvent({ searchString, eventId }: GetOrdersByEve
   try {
     await connectToDatabase()
 
-    if (!eventId) throw new Error('L id de l événement est requis')
+    if (!eventId) throw new Error('Event ID is required')
     const eventObjectId = new ObjectId(eventId)
 
     const orders = await Order.aggregate([
