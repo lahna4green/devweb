@@ -7,14 +7,14 @@ import MobileNav from "./MobileNav"
 
 function Header() {
   return (
-    <header className="w-full border-b">
+    <header className="bg-purple-100 w-full border-b">
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
-          <Image src="/assets/images/logo.svg" width={128} height={38} alt="Evently logo"></Image>
+          <Image src="/assets/images/logo.png" width={600} height={50} alt="DZÉvénement logo"></Image>
         </Link>
 
         <SignedIn>
-          <nav className="md:flex-between hidden w-full max-w-xs">
+          <nav className=" md:flex-between hidden w-full max-w-xs">
             <NavItems />
           </nav>
         </SignedIn>
@@ -26,7 +26,7 @@ function Header() {
           </SignedIn>
 
           <SignedOut>
-            <Button asChild className="rounded-full" size="lg">
+            <Button asChild className="bg-purple-600 hover:bg-purple-500 rounded-full" size="lg">
               <Link href="/sign-in">Connexion</Link>
             </Button>
           </SignedOut>

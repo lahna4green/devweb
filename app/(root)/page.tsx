@@ -22,12 +22,12 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
   return (
     <>
-      <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
+      <section className="bg-purple-100 bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
-            <h1 className="h1-bold">Organisez, connectez, célébrez : vos événements, en un clic avec Evently !</h1>
+            <h1 className="h1-bold">Organisez, connectez, célébrez : vos événements, en un clic avec DZÉvénement !</h1>
             <p className="p-regular-20 md:p-regular-24">Réservez vos places et connectez-vous à vos communautés grâce à notre plateforme de gestion d'événements. Restez toujours à jour et ne manquez aucun événement important !</p>
-            <Button size="lg" asChild className="button w-full sm:w-fit">
+            <Button size="lg" asChild className="bg-purple-600 hover:bg-purple-500 button w-full sm:w-fit">
               <Link href="#events">
                 Découvrir
               </Link>

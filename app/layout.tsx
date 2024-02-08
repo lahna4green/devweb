@@ -6,9 +6,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"], weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
-  title: "Evently",
-  description: "système de gestion d'évenements ",
-  icons: '/assets/images/logo.svg',
+  title: "DZÉvénement",
+  description: "système de gestion d'événements ",
+  icons: '/assets/images/logo.png',
 };
 
 export default function RootLayout({

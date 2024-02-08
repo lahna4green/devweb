@@ -67,11 +67,11 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
             <AlertDialogHeader>
               <AlertDialogTitle>Nouvelle catégorie</AlertDialogTitle>
               <AlertDialogDescription>
-                <Input type="text" placeholder="Category name" className="input-field mt-3" onChange={(e) => setNewCategory(e.target.value)} />
+                <Input type="text" placeholder="nom de la catégorie" className="input-field mt-3" onChange={(e) => setNewCategory(e.target.value)} />
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogCancel>Annuler</AlertDialogCancel>
               <AlertDialogAction onClick={() => startTransition(handleAddCategory)}>Ajouter</AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>

@@ -65,7 +65,7 @@ export async function getOrdersByEvent({ searchString, eventId }: GetOrdersByEve
   try {
     await connectToDatabase()
 
-    if (!eventId) throw new Error('Event ID is required')
+    if (!eventId) throw new Error('L id de l événement est requis')
     const eventObjectId = new ObjectId(eventId)
 
     const orders = await Order.aggregate([
