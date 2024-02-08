@@ -6,7 +6,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
 import Checkout from './Checkout'
-//import Checkout from './Checkout'
+
 
 const CheckoutButton = ({ event }: { event: IEvent }) => {
   const { user } = useUser();

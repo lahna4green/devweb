@@ -18,7 +18,7 @@ export async function POST(request: Request) {
 
     // Get the ID and type
     const eventType = event.type
-
+    //creer la base de donnée pour les commandes 
     // CREATE
     if (eventType === 'checkout.session.completed') {
         const { id, amount_total, metadata } = event.data.object

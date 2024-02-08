@@ -1,15 +1,8 @@
 import React, { useEffect } from 'react'
-
-
 import { IEvent } from '@/lib/database/models/event.model';
 import { Button } from '../ui/button';
-//import { checkoutOrder } from '@/lib/actions/order.actions';
-
-import { loadStripe } from '@stripe/stripe-js';
 import { checkoutOrder } from '@/lib/actions/order.actions';
-
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
+import { loadStripe } from '@stripe/stripe-js';
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 const Checkout = ({ event, userId }: { event: IEvent, userId: string }) => {
@@ -34,7 +27,7 @@ const Checkout = ({ event, userId }: { event: IEvent, userId: string }) => {
       buyerId: userId
     }
 
-    await checkoutOrder(order);
+    await checkoutOrder(order); //passe la commande 
   }
 
   return (

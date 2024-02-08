@@ -43,7 +43,7 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
     throw error;
   }
 }
-
+//creer la commande 'payement et tt ca '
 export const createOrder = async (order: CreateOrderParams) => {
   try {
     await connectToDatabase();
@@ -55,6 +55,7 @@ export const createOrder = async (order: CreateOrderParams) => {
     });
 
     return JSON.parse(JSON.stringify(newOrder));
+
   } catch (error) {
     handleError(error);
   }
